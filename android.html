@@ -159,7 +159,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <p>&nbsp;&nbsp;&nbsp; compile <span id="u2587-33">'com.google.code.gson:gson:2.4'</span></p>
         <p>&nbsp;&nbsp;&nbsp; compile<span id="u2587-36"> 'org.apache.httpcomponents:httpmime:4.3.6'</span></p>
         <p>&nbsp;&nbsp;&nbsp; compile <span id="u2587-39">'org.apache.httpcomponents:httpclient-android:4.3.5'</span></p>
-        <p>&nbsp;&nbsp;&nbsp; compile<span id="u2587-42"> 'com.lbslocal.findrix:library:2.0.7.0'</span></p>
+        <p>&nbsp;&nbsp;&nbsp; compile<span id="u2587-42"> 'com.lbslocal.findrix:library:2.0.9.0'</span></p>
         <p>}</p>
         <p>&nbsp;</p>
         <p><span id="u2587-47">android</span> {</p>
@@ -260,16 +260,11 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <p>&lt;<span id="u2864-25">uses-permission</span> <span id="u2864-27">android:name</span>=<span id="u2864-29">&quot;android.permission.ACCESS_FINE_LOCATION&quot;</span> /&gt;</p>
         <p>&lt;<span id="u2864-33">uses-permission </span><span id="u2864-34">android:name</span>=<span id="u2864-36">&quot;android.permission.ACCESS_COARSE_LOCATION&quot; </span>/&gt;</p>
         <p>&lt;<span id="u2864-40">uses-permission</span> <span id="u2864-42">android:name</span>=<span id="u2864-44">&quot;android.permission.CALL_PHONE&quot;</span> /&gt;</p>
-        <p>&lt;<span id="u2864-48">uses-permission</span> <span id="u2864-50">android:name</span>=<span id="u2864-52">&quot;android.permission.INTERNET&quot;</span> /&gt;</p>
-        <p>&lt;<span id="u2864-56">uses-permission</span> <span id="u2864-58">android:name</span>=<span id="u2864-60">&quot;android.permission.WAKE_LOCK&quot;</span> /&gt;</p>
-        <p>&lt;<span id="u2864-64">uses-permission</span> <span id="u2864-66">android:name</span>=<span id="u2864-68">&quot;android.permission.VIBRATE&quot;</span> /&gt;</p>
-        <p>&lt;<span id="u2864-72">uses-permission</span> <span id="u2864-74">android:name</span>=<span id="u2864-76">&quot;android.permission.GET_ACCOUNTS&quot;</span> /&gt;</p>
         <p>&lt;<span id="u2864-80">uses-permission </span><span id="u2864-81">android:name</span>=<span id="u2864-83">&quot;com.google.android.c2dm.permission.RECEIVE&quot; </span>/&gt;</p>
         <p>&lt;<span id="u2864-87">uses-permission</span> <span id="u2864-89">android:name</span>=<span id="u2864-91">&quot;android.permission.ACCESS_WIFI_STATE&quot;</span> /&gt;</p>
         <p>&lt;<span id="u2864-95">uses-permission</span> <span id="u2864-97">android:name</span>=<span id="u2864-99">&quot;com.google.android.c2dm.permission.RECEIVE&quot;</span> /&gt;</p>
         <p>&lt;<span id="u2864-103">uses-permission </span><span id="u2864-104">android:name</span>=<span id="u2864-106">&quot;YOUR_PACKAGE.permission.C2D_MESSAGE&quot;</span> /&gt;</p>
         <p>&lt;<span id="u2864-110">permission</span> <span id="u2864-112">android:name</span>=<span id="u2864-114">&quot;YOUR_PACKAGE.permission.C2D_MESSAGE&quot;</span> <span id="u2864-116">android:protectionLevel</span>=<span id="u2864-118">&quot;signature&quot; </span>/&gt;</p>
-        <p>&lt;<span id="u2864-122">uses-permission</span> <span id="u2864-124">android:name</span>=<span id="u2864-126">&quot;android.permission.BLUETOOTH&quot;</span> /&gt;</p>
        </div>
       </div>
      </div>
@@ -314,7 +309,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <p id="u2969-48">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</p>
         <p id="u2969-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</p>
         <p id="u2969-51">&nbsp;</p>
-        <p id="u2969-53">&nbsp;&nbsp;&nbsp; Findrix.start(ctx, userId, clientId, clientSecret, name, phone, email, photo, senderId, callback);</p>
+        <p id="u2969-53">&nbsp;&nbsp;&nbsp; Findrix.start(ctx, userId, clientId, clientSecret, photo, senderId, callback);</p>
         <p id="u2969-54">&nbsp;</p>
         <p id="u2969-56">}</p>
        </div>
@@ -327,9 +322,6 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <li id="u2978-7">userId – Provide an ID for this device(can be null or empty)</li>
         <li id="u2978-9">clientId – Request a client id with TRLS dev team</li>
         <li id="u2978-11">clientSecret – Request a client secret with TRLS dev team</li>
-        <li id="u2978-13">name – Can be null or empty</li>
-        <li id="u2978-15">phone - Can be null or empty</li>
-        <li id="u2978-17">email - Can be null or empty</li>
         <li id="u2978-19">photo - Can be null or empty</li>
         <li id="u2978-21">senderId - You can use TRLs with other push provider(ie &quot;SENDER_ID_1,SENDER_ID_2&quot;). Can be null of empty</li>
         <li id="u2978-23">callback - Device creation callback</li>
@@ -359,7 +351,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <div class="rounded-corners grpelem" id="u3046"><!-- simple frame --></div>
      <div class="rounded-corners clearfix grpelem" id="u3012"><!-- column -->
       <div class="clearfix colelem" id="u3027-4"><!-- content -->
-       <p>Add the following line to your proguard file:</p>
+       <p>Add the following meta-data to the app's manifest.xml file:</p>
       </div>
       <div class="clearfix colelem" id="pu3052"><!-- group -->
        <div class="rounded-corners grpelem" id="u3052"><!-- simple frame --></div>

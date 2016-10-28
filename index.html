@@ -44,7 +44,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
          <div class="clearfix grpelem" id="u2098"><!-- group -->
           <div class="pointer_cursor MuseLinkActive rounded-corners clearfix grpelem" id="u2100"><!-- group -->
            <a class="block" href="index.html"></a>
-           <a class="nonblock nontext MuseLinkActive clearfix grpelem" id="u2099-4" href="index.html"><!-- content --><p>iOs</p></a>
+           <a class="nonblock nontext MuseLinkActive clearfix grpelem" id="u2099-4" href="index.html"><!-- content --><p>iOS</p></a>
           </div>
          </div>
          <div class="clearfix grpelem" id="u2207"><!-- group -->
@@ -227,7 +227,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
          <p>&nbsp;</p>
          <p>- (<span id="u2157-9">BOOL</span>)application:(UIApplication *)application didFinishLaunchingWithOptions:(<span id="u2157-11">NSDictionary</span> *)launchOptions {</p>
          <p>&nbsp;</p>
-         <p>&nbsp;&nbsp;&nbsp; [Findrix <span id="u2157-16">startWithUserId</span>:<span id="u2157-18">@&quot;userId&quot;</span> <span id="u2157-20">clientId</span>:<span id="u2157-22">@&quot;clientId&quot;</span> <span id="u2157-24">clientSecret</span>:<span id="u2157-26">@&quot;clientSecret&quot;</span> <span id="u2157-28">name</span>:<span id="u2157-30">@&quot;deviceName&quot;</span> <span id="u2157-32">phone</span>:<span id="u2157-34">@&quot;devicePhoneNumber&quot; </span><span id="u2157-35">photo:</span><span id="u2157-36">devicePhoto</span> <span id="u2157-38">callback:</span>^(<span id="u2157-40">NSString</span> *deviceId, <span id="u2157-42">NSError</span> *error) {</p>
+         <p>&nbsp;&nbsp;&nbsp; [Findrix <span id="u2157-16">startWithUserId</span>:<span id="u2157-18">@&quot;userId&quot;</span> <span id="u2157-20">clientId</span>:<span id="u2157-22">@&quot;clientId&quot;</span> <span id="u2157-24">clientSecret</span>:<span id="u2157-26">@&quot;clientSecret&quot;</span> <span id="u2157-35">photo:</span><span id="u2157-36">devicePhoto</span> <span id="u2157-38">callback:</span>^(<span id="u2157-40">NSString</span> *deviceId, <span id="u2157-42">NSError</span> *error) {</p>
          <p>&nbsp;</p>
          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u2157-47">if</span>(error == <span id="u2157-49">nil</span>) <span id="u2157-51">NSLog</span>(<span id="u2157-53">@&quot;Device created </span><span id="u2157-54">%@</span>&quot;, deviceId);</p>
          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id="u2157-58">else</span> <span id="u2157-60">NSLog</span>(<span id="u2157-62">@&quot;Error creating device</span> <span id="u2157-64">%@</span>&quot;, error.description);</p>
@@ -253,8 +253,6 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
         <li id="u2105-5">userId – Provide an ID for this device(can be null or empty)</li>
         <li id="u2105-7">clientId – Request a client id with Findrix dev team</li>
         <li id="u2105-9">clientSecret – Request a client secret with Findrix dev team</li>
-        <li id="u2105-11">deviceName – Can be null or empty</li>
-        <li id="u2105-13">devicePhoneNumber - Can be null or empty</li>
         <li id="u2105-15">devicePhoto - Can be null of empty</li>
         <li id="u2105-17">callback - Device creation callback</li>
        </ul>
